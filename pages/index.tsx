@@ -1,28 +1,16 @@
-import Head from 'next/head';
-
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title className="">Blue Archive</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <>
+      <header className="flex justify-center">
+        <img src="/images/logo.png" />
+      </header>
       <main>
-        <h1 className="text-red-600">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <div className="flex justify-center">
+          <img src="images/hoshino.png" className="h-full absolute ml-48 animate-rotate" />
+          <img src="images/shiroko.png" className="h-full z-10" />
+          <img src="images/serika.png" className="h-full" />
+        </div>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel Logo" />
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
